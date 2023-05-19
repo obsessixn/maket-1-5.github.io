@@ -1,0 +1,48 @@
+
+
+
+
+@font-face {
+    font-family: 'tt_lakesbold';
+    src: url('ttlakes-bold-webfont.woff2') format('woff2'),
+         url('ttlakes-bold-webfont.woff') format('woff');
+    font-weight: 900;
+    font-style: bold;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'tt_lakesitalic';
+    src: url('ttlakes-italic-webfont.woff2') format('woff2'),
+         url('ttlakes-italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'tt_lakesmedium';
+    src: url('ttlakes-medium-webfont.woff2') format('woff2'),
+         url('ttlakes-medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'tt_lakesregular';
+    src: url('ttlakes-regular-webfont.woff2') format('woff2'),
+         url('ttlakes-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
