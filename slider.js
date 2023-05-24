@@ -5,7 +5,6 @@ let mySwiper;
 function mSlider(){
     if (window.innerWidth <= 767 && slider.dataset.mobile == "false"){
         mySwiper = new Swiper(slider,{
-            sliderPerView: 1.25,
             spaceBetween: 16,
             loop: true,
             slideClass : 'swiper-slide',
@@ -14,12 +13,23 @@ function mSlider(){
                 clickable: true,
 
              },
+             breakpoints: {
+                320: {
+                    slidesPerView: 1.25
+                },
+                480: {
+                    slidesPerView: 2.1
+                },
+                660: {
+                    sliderPerView: 3.1
+                },
+             }
         });
 
         slider.dataset.mobile = 'true';
     }
 
-    if(window.innerWidth > 767) {
+    if(window.innerWidth >= 767) {
         slider.dataset.mobile = 'false';
         if (slider.classList.contains('swiper-container-initialized')) {
             mySwiper.destroy();

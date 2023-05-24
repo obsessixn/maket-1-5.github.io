@@ -1,3 +1,35 @@
+@font-face {
+    font-family: 'TT Lakes_medium';
+    src: url('../assets/fonts/TTLakes-Medium.eot');
+    src: local('../assets/fonts/TT Lakes Medium'), local('../assets/fonts/TTLakes-Medium'),
+        url('../assets/fonts/TTLakes-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../assets/fonts/TTLakes-Medium.woff') format('woff'),
+        url('../assets/fonts/TTLakes-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TT Lakes_bold';
+    src: url('../assets/fonts/TTLakes-Bold.eot');
+    src: local('../assets/fonts/TT Lakes Bold'), local('../assets/fonts/TTLakes-Bold'),
+        url('../assets/fonts/TTLakes-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../assets/fonts/TTLakes-Bold.woff') format('woff'),
+        url('../assets/fonts/TTLakes-Bold.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TT Lakes_regular';
+    src: url('../assets/fonts/TTLakes-Regular.eot');
+    src: local('../assets/fonts/TT Lakes Regular'), local('../assets/fonts/TTLakes-Regular'),
+        url('../assets/fonts/TTLakes-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../assets/fonts/TTLakes-Regular.woff') format('woff'),
+        url('../assets/fonts/TTLakes-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
 a{
     text-decoration: none;
 }
@@ -18,31 +50,32 @@ ul, li{
     list-style:none;
 }
 
-body{
-    background-color: #f8f8f8;
-    font-family: TT Lakes;
+html,body{
+    max-width: 100%;
+    height: 100%;
+    line-height: 1;
+    font-size: 16px;
+    color: #000;
+    margin: 0 auto;
+    background-color: #F2F2F2;
 }
 
 .content__button{
     display:none;
-    background-color: #f8f8f8;
-    font-family: TT Lakes;
+    background-color: #F2F2F2;
+    font-family: "TT Lakes_medium";
     color: black;
     font-size: 16px;
     line-height: 24px;
     letter-spacing: -0.2px;
     text-align:left;
     gap:16px;
+    margin-left:63px;
+    margin-top:24px;
 }
-
-.content__button::before{
-    content: url("/assets/icon/go.svg");
-}
-
 .repair__body{
+    margin: 0 auto;
     position:relative;
-    width:320px;
-    background: #f8f8f8;
 }
 .repair__header{
     height: 80px;
@@ -51,17 +84,19 @@ body{
     border-style:solid;
     border-width: 1px 0 0 0;
     border-color: #41f6d7;
+   
 }
 
 .repair__title{
     display:flex;
-    font-family:"TT lakes";
+    font-family:"TT lakes_regular";
     font-size:16px;
     line-height: 24px;
     letter-spacing: -0.2px;
     text-transform: uppercase;
     color: #7e7e82;
     padding: 16px;
+    margin-left:16px;
 }
 
 .swiper{
@@ -110,11 +145,7 @@ body{
     justify-content: space-between;
     padding: 16px;
   }
-
 @media screen and (min-width: 768px){
-    .repair__body{
-        width:768px
-    }
     .swiper-wrapper{
         flex-wrap:wrap;
         display:grid;
@@ -133,12 +164,15 @@ body{
         display:flex;
         grid-column: 1/3;
     }
+    .repair__title{
+        margin-left:24px;
+    }
+    .swiper-slide.is-visible {
+        display: block;
+      }
 }
 
 @media screen and (min-width: 1120px){
-    .repair__body{
-        width: 1120px;
-    }
     .swiper-wrapper{
         grid-template-columns: 240px 240px 240px 240px;
     }
@@ -148,9 +182,12 @@ body{
     .swiper-slide:nth-child(n + 9) {
         display: none;
       }
-    }
+    
     .swiper-slide.is-visible {
       display: block;
     }
+    .repair__title{
+        margin-left:32px;
+    }
+}
     
-
