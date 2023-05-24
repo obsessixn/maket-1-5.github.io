@@ -189,5 +189,12 @@ html,body{
     .repair__title{
         margin-left:32px;
     }
+    .content__button{
+        margin-left:22%;
+    }
 }
-    
+@media screen and (min-width: 1024px){   
+    .content__button{
+        margin-left:15%;
+    }
+}
